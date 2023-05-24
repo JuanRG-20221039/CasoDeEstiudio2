@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de satisfacción a los asistentes del evento</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+    <h1>Encuesta de satisfacción a los asistentes del evento</h1>
+  </header>
+
+  <main>
+    <fieldset>
+        <h2>Responda las siguientes preguntas:</h2>
+        <form action="./End.html" id="Enviar" method="post">
+            <hr>
+            <label for="name">Ingrese su nombre completo:</label>
+            <input type="text" name="nombre" id="name" placeholder="Nombre completo">
+            <br>
+            <label for="email">Ingrese su correo electronico:</label>
+            <input type="text" name="correo" id="email" placeholder="Correo electronico">
+            <br>
+            <label for="old">Ingrese su edad:</label>
+            <input type="number" name="edad" id="old" placeholder="Ejemplo: 28">
+            <br>
+            <label for="Ev">Como evaluaria este evento (elija una opcion):</label>
+            <select name="evaluacion" id="Ev">
+                <option value="1">excelente</option>
+                <option value="1">bueno</option>
+                <option value="1">regular</option>
+                <option value="1">malo</option>
+            </select>
+            <br>
+            <label for="comida">Que le parecio la calidad de los aperitivos: *</label>
+            <input type="radio" name="opcion" id="1">Excelentes
+            <input type="radio" name="opcion" id="1">Regulares
+            <input type="radio" name="opcion" id="1">Malos
+            <br>
+            <label for="interes">Le resulto interesante la conferencia: *</label>
+            <input type="radio" name="opcion" id="1">SI
+            <input type="radio" name="opcion" id="1">NO
+            <br>
+            <label for="stars">Si tuvera que dar una calificacion al evento, que puntaje le otorgaria: *</label>
+            <select name="estrellas" id="stars">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+            </select>
+            <br>
+            <label for="uso">Que le parecio el diseño de la camiseta que se le otorgo: *</label>
+            <input type="radio" name="opcion" id="1">Buena
+            <input type="radio" name="opcion" id="1">Mala
+            <input type="radio" name="opcion" id="1">Regular
+            <br>
+            <label for="coment">Agregue un comentario sobre el evento en el siguiente recuadro:</label>
+            <br>
+            <textarea name="comentario" id="coment" cols="50" rows="10"></textarea>
+            <br>
+            <label for="send">Enviar Respuestas:</label>
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+  </main>
+  <footer class="foot">
+    Encuesta de satisfacción | 2023
+  </footer>
+</body>
+</html>
